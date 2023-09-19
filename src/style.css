@@ -1,3 +1,11 @@
+/* VARIABLES */
+:root{
+    --bg-color: black;
+    --font-semi-bold: 400px;
+    --title-color: white;
+
+}
+
 body{
     margin: 0;
     padding: 0;
@@ -9,6 +17,45 @@ body{
 html{
     scroll-behavior: smooth;
 }
+
+/* for the mobile version */
+.header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: var(--bg-color);
+    z-index: var(--z-fixed);
+    transition: box-shadow .4s;
+}
+
+.nav{
+    position: relative;
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: left;
+}
+
+.nav__logo{
+    display: flex;
+    column-gap: .5rem;
+    align-items: center;
+    font-weight: var(--font-semi-bold);
+
+}
+
+.nav__logo-circle,
+.nav__toggle{
+    width: 32px;
+    height: 32px;
+    background-color: var(--bg-color);
+}
+/* END mobile version */
+
+
+/* to handle loaders and such */
+
  .content{
     display: none;
  }
@@ -71,3 +118,5 @@ span{
 
     }
 }
+/*end the laoder */
+
