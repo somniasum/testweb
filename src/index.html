@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume</title>
+
+    <!for the main script to handle the loader before the actual site>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!for the icons>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/remixicon/3.5.0/remixicon.css"></script>
+</head>
+<body>
+    <!the loader for the page>
+    <div class="loader">
+        <div class="ring">
+            <span>loading</span>
+        </div>
+    </div>
+
+    <!where the rest of the page goes>
+    <div class="content">
+        <header class="header" id="header">
+
+        </header>
+
+        <main class="main">
+            <section class="home section" id="home">
+
+            </section>
+
+            <section class="about section" id="about">
+
+            </section>
+
+            <section class="skills section" id="skills">
+                
+            </section>
+
+            <section class="contact section" id="contact">
+                
+            </section>
+        </main>
+        <footer class="footer">
+
+        </footer>
+        <script src="main.js"></script>
+
+    </div>
+
+    <!script for loading the loader then the page after>
+    <script>
+        $(window).on('load',function(){
+            $(".loader").fadeOut(1000);
+            $(".content").fadeIn(1000);
+        })
+    </script>
+    
+</body>
+</html>
